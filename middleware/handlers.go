@@ -32,7 +32,7 @@ func createConnection() *sql.DB {
 	}
 
 	// Open the connection
-	db, err := sql.Open("postgres", os.Getenv("POSTGRES_URL"))
+	db, err := sql.Open("postgres", os.Getenv("postgres://epxmojvz:03_0rpKtIydMhAygI96MPahtRQtrgn32@abul.db.elephantsql.com/epxmojvz"))
 
 	if err != nil {
 		panic(err)
